@@ -7,7 +7,7 @@ import cx_Oracle
 class LabeledLineSentence(object):
     def __init__(self, sources):
         self.sources = sources
-        self.DbConnection = cx_Oracle.connect('clm_adapterdb/Cap3eprd2@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=clms06ract.nwie.net)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=clms01ch.nsc.net)))')
+        self.DbConnection = cx_Oracle.connect('username/password@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=clms06ract.nwie.net)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=clms01ch.nsc.net)))')
         self.CursorVar = self.DbConnection.cursor()
         print("Connection Opened")
         
