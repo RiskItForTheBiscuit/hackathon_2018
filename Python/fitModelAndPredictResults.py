@@ -79,7 +79,7 @@ def updateNoteRowWithPrediction(cursor, connection, claimNumber, thePrediction):
     
 
 if __name__ == "__main__":
-    connection_string = 'clm_adapterdb/Cap3eprd2@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=clms06ract.nwie.net)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=clms01ch.nsc.net)))'
+    connection_string = 'username/Password@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=clms06ract.nwie.net)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=clms01ch.nsc.net)))'
     connection = cx_Oracle.connect(connection_string)
     cursor = cx_Oracle.Cursor(connection)
     
