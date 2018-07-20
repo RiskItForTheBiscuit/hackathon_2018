@@ -7,9 +7,9 @@ class Hackathon
 
   def initialize
     ###PreProd
-    @db = Sequel.connect('jdbc:oracle:thin:@clms06ract.nwie.net:1521/clms01ch.nsc.net', :user => 'clm_adapterdb', :password => Base64.decode64('Q2FwM2VwcmQy\n'))
+    @db = Sequel.connect('jdbc:oracle:thin:@clms06ract.nwie.net:1521/clms01ch.nsc.net', :user => '', :password => '')
     ##Breakfix
-    # @db = Sequel.connect('jdbc:oracle:thin:@clms05ract.nwie.net:1521/clms02q.nsc.net', :user => 'clm_adapterdb', :password => Base64.decode64('Q2FiM2VrZml4Mg==\n'))
+    # @db = Sequel.connect('jdbc:oracle:thin:@clms05ract.nwie.net:1521/clms02q.nsc.net', :user => '', :password => '')
   end
 
   def get_claims
